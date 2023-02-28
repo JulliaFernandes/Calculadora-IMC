@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #F5FFFA;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #D3D3D3;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.title{
+    padding: 20px;
+    width: 260px;
+    font-size: 28px;
+    text-align: center;
+    background: #DC143C;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -90px;
+    font-weight: bolder;
+}
+
+.imc{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.peso{
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.altura{
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.formSubmit{
+    font-size: 18px;
+    height: 40px;
+    width: 150px;
+    margin: 15px auto;
+    text-align: center;
+    display: block;
+    background: #645bff;
+    border-radius: 25px;
+    border: solid #645bff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .9);
+    transition: 0.4s;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+}
+
+button .formSubmit::before{
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.4s;
+    padding: 3px;
+    transform: rotate(-360deg);
+}
+
+.formSubmit:hover{
+    background: #000;
+    color: #fff;
+    border: solid #000;
+}
+
+.valorIMC{
+    margin: 10px;
+    text-align: center;
+}
+
+.classificacao{
+    margin: 10px;
+    text-align: center;
+}
+
+label{
+    font-size: 22px;
+}
